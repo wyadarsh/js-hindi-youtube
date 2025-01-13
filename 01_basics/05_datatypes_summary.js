@@ -35,3 +35,33 @@ const myFunction = function(){
 console.log(typeof anotherId);
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+
+/// ///////////////////////////////////////////////////
+
+
+// memories
+// 1.stack(primitive)// we will get copy
+//2.heap(non primitive)//we will get reference
+
+let myYotubename="hiteshchaudhrydotcom"
+let anotherName=myYotubename
+anotherName="chaiaurcode"
+console.log(anotherName)
+console.log(myYotubename)
+
+
+let user1={
+    email:"user@google.com",
+    upi:"user@ybl"
+}
+let user2=user1
+console.log(user2)
+console.log(user1)
+
+user2.email="king@yahoo.com"
+console.log(user2.email)
+console.log(user1.email)
+
+           
